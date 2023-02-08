@@ -46,7 +46,12 @@
     <dmn:decisionTable id="_9A198E0C-BEC5-4862-938D-699AB6679A3D" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_F8428547-776C-47CD-81C0-61503D7AB1A9">
         <dmn:inputExpression id="_30C7E815-94B0-4033-BF19-04B985EBCA7C" typeRef="number">
-          <dmn:text>Rain-Forecast</dmn:text>
+          <dmn:text>Weather.rainForecast</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_27BA3DD3-1B6D-4E15-9047-391ED59D52E0">
+        <dmn:inputExpression id="_D8AE05EC-FAB5-4E99-83B2-936B16C7031C" typeRef="temperature">
+          <dmn:text>Weather.temperature</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_A275DD94-E8B9-413E-9374-25CA4E9689CA"/>
@@ -54,6 +59,9 @@
       <dmn:rule id="_3802407B-7761-4AC8-A933-19F9461B0DA1">
         <dmn:inputEntry id="_4F2688E4-8D5C-4C5F-AAFD-10F74F1FBB48">
           <dmn:text>[0..20)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_ADEC8E16-5C9B-479E-A77A-2F9CF868BBB4">
+          <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_11F3CE5B-37EA-44F4-BA14-C2B7677EA8F9">
           <dmn:text>"Nice day. Enjoy the weather!"</dmn:text>
@@ -66,6 +74,9 @@
         <dmn:inputEntry id="_A2567D3C-EE94-4F99-8647-7CDF541D4DAB">
           <dmn:text>[20..80)</dmn:text>
         </dmn:inputEntry>
+        <dmn:inputEntry id="_FF93059E-94FE-445F-9897-C5BEB2237D33">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
         <dmn:outputEntry id="_7BBC9703-FE9B-4636-9DCB-1248F5F1DD3A">
           <dmn:text>"Risk of rain. Might need an umbrella."</dmn:text>
         </dmn:outputEntry>
@@ -76,6 +87,9 @@
       <dmn:rule id="_9311C567-BE16-4A4C-9F17-2381EB259ABB">
         <dmn:inputEntry id="_B7BC160F-3A33-4898-8D21-2D1330BF3569">
           <dmn:text>[80..100]</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_F1915346-342B-4483-BC85-4AE81F3AB780">
+          <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_9ABFDD51-BA18-4B2C-A58D-66EB18227744">
           <dmn:text>"Rainy day. Take an umbrella."</dmn:text>
@@ -96,6 +110,7 @@
           <kie:ComponentWidths dmnElementRef="_9A198E0C-BEC5-4862-938D-699AB6679A3D">
             <kie:width>50</kie:width>
             <kie:width>175</kie:width>
+            <kie:width>100</kie:width>
             <kie:width>353</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
