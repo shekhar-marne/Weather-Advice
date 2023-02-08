@@ -35,7 +35,7 @@
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_3802407B-7761-4AC8-A933-19F9461B0DA1">
         <dmn:inputEntry id="_4F2688E4-8D5C-4C5F-AAFD-10F74F1FBB48">
-          <dmn:text>(0..20)</dmn:text>
+          <dmn:text>[0..20)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_11F3CE5B-37EA-44F4-BA14-C2B7677EA8F9">
           <dmn:text>"Nice day. Enjoy the weather!"</dmn:text>
@@ -46,7 +46,7 @@
       </dmn:rule>
       <dmn:rule id="_C48D5F10-13F4-4968-9896-F57105371FD8">
         <dmn:inputEntry id="_A2567D3C-EE94-4F99-8647-7CDF541D4DAB">
-          <dmn:text>(20..80)</dmn:text>
+          <dmn:text>[20..80)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_7BBC9703-FE9B-4636-9DCB-1248F5F1DD3A">
           <dmn:text>"Risk of rain. Might need an umbrella."</dmn:text>
@@ -57,7 +57,7 @@
       </dmn:rule>
       <dmn:rule id="_9311C567-BE16-4A4C-9F17-2381EB259ABB">
         <dmn:inputEntry id="_B7BC160F-3A33-4898-8D21-2D1330BF3569">
-          <dmn:text>(80..100)</dmn:text>
+          <dmn:text>[80..100]</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_9ABFDD51-BA18-4B2C-A58D-66EB18227744">
           <dmn:text>"Rainy day. Take an umbrella."</dmn:text>
