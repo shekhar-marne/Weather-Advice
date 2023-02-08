@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_2767D6CE-A99A-44FB-B26F-B4773ECF72B0" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_63A10096-1940-4826-8A42-96E4F85AA5FE" name="Shekhar-Weather-Advice" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_2767D6CE-A99A-44FB-B26F-B4773ECF72B0">
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_2767D6CE-A99A-44FB-B26F-B4773ECF72B0" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_63A10096-1940-4826-8A42-96E4F85AA5FE" name="MyName-Weather-Advice" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_2767D6CE-A99A-44FB-B26F-B4773ECF72B0">
   <dmn:extensionElements/>
+  <dmn:itemDefinition id="_35999F1F-A59F-495B-8012-038B2128980B" name="temperature" isCollection="false">
+    <dmn:typeRef>string</dmn:typeRef>
+    <dmn:allowedValues kie:constraintType="expression" id="_DE36EDAF-B9B7-4E8F-815C-4226F1D7F3D3">
+      <dmn:text>"cold", "warm", "hot"</dmn:text>
+    </dmn:allowedValues>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_9FAFB5BA-FFF5-448B-BCC2-771B78C3EC52" name="weather" isCollection="false">
+    <dmn:itemComponent id="_DAA30943-AA17-43DC-A7ED-33426FCD7632" name="rainForecast" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_1A8D0647-816F-4012-B9CC-45A5B821BFF5" name="temperature" isCollection="false">
+      <dmn:typeRef>temperature</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmn:inputData id="_5D6385A5-41AF-4EEC-BB36-902009E37BCE" name="Name">
     <dmn:extensionElements/>
     <dmn:variable id="_A2984A51-6793-41A2-8FDF-B4463AB2C7E5" name="Name" typeRef="string"/>
