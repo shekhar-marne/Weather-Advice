@@ -50,7 +50,7 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_27BA3DD3-1B6D-4E15-9047-391ED59D52E0">
-        <dmn:inputExpression id="_D8AE05EC-FAB5-4E99-83B2-936B16C7031C" typeRef="temperature">
+        <dmn:inputExpression id="_D8AE05EC-FAB5-4E99-83B2-936B16C7031C" typeRef="string">
           <dmn:text>Weather.temperature</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
@@ -61,7 +61,7 @@
           <dmn:text>[0..20)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_ADEC8E16-5C9B-479E-A77A-2F9CF868BBB4">
-          <dmn:text>-</dmn:text>
+          <dmn:text>"cold"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_11F3CE5B-37EA-44F4-BA14-C2B7677EA8F9">
           <dmn:text>"Nice day. Enjoy the weather!"</dmn:text>
@@ -110,7 +110,7 @@
           <kie:ComponentWidths dmnElementRef="_9A198E0C-BEC5-4862-938D-699AB6679A3D">
             <kie:width>50</kie:width>
             <kie:width>175</kie:width>
-            <kie:width>100</kie:width>
+            <kie:width>263</kie:width>
             <kie:width>353</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
