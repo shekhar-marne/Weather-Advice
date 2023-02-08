@@ -33,9 +33,9 @@
 </dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:inputData id="_E7F0A444-3AEA-43E8-B2DE-69231AD05FC7" name="Rain-Forecast">
+  <dmn:inputData id="_E7F0A444-3AEA-43E8-B2DE-69231AD05FC7" name="Weather">
     <dmn:extensionElements/>
-    <dmn:variable id="_9061CF7A-E6A9-4892-A28C-9D1F54E10050" name="Rain-Forecast" typeRef="number"/>
+    <dmn:variable id="_9061CF7A-E6A9-4892-A28C-9D1F54E10050" name="Weather" typeRef="weather"/>
   </dmn:inputData>
   <dmn:decision id="_86633B48-0B8A-40EF-8BBD-B7018118A31B" name="Weather-Advice">
     <dmn:extensionElements/>
