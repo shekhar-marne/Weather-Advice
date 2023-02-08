@@ -12,7 +12,8 @@
       <dmn:requiredInput href="#_5D6385A5-41AF-4EEC-BB36-902009E37BCE"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_D5CCDEFB-E2A2-45BF-B560-1D318358CF56">
-      <dmn:text>if Name = "" then "Sorry, we don't have enough information to provide a response."else "Hello "+Name+"! " + Weather-Advice</dmn:text>
+      <dmn:text>if Name = "" then "Sorry, we don't have enough information to provide a response." else "Hello "+Name+"! "+Weather-Advice
+</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:inputData id="_E7F0A444-3AEA-43E8-B2DE-69231AD05FC7" name="Rain-Forecast">
