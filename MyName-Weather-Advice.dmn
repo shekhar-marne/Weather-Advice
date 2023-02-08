@@ -20,9 +20,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_9061CF7A-E6A9-4892-A28C-9D1F54E10050" name="Rain-Forecast" typeRef="number"/>
   </dmn:inputData>
-  <dmn:decision id="_86633B48-0B8A-40EF-8BBD-B7018118A31B" name="Weather-Advice">
+  <dmn:decision id="_86633B48-0B8A-40EF-8BBD-B7018118A31B" name="WeatherAdvice">
     <dmn:extensionElements/>
-    <dmn:variable id="_C950E9DA-5A2C-4577-B699-FA6715A409F4" name="Weather-Advice" typeRef="string"/>
+    <dmn:variable id="_C950E9DA-5A2C-4577-B699-FA6715A409F4" name="WeatherAdvice" typeRef="string"/>
     <dmn:informationRequirement id="_A52E68AA-8F98-48EB-A8EB-73125009ED81">
       <dmn:requiredInput href="#_E7F0A444-3AEA-43E8-B2DE-69231AD05FC7"/>
     </dmn:informationRequirement>
@@ -117,7 +117,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="166" y="153" width="100" height="50"/>
+        <dc:Bounds x="166" y="153" width="119" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_CE3B60A4-92B5-411E-BC96-7631E2E48F9D-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_CE3B60A4-92B5-411E-BC96-7631E2E48F9D">
@@ -126,7 +126,7 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_A52E68AA-8F98-48EB-A8EB-73125009ED81-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_A52E68AA-8F98-48EB-A8EB-73125009ED81">
         <di:waypoint x="216" y="283"/>
-        <di:waypoint x="216" y="203"/>
+        <di:waypoint x="225.5" y="203"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
