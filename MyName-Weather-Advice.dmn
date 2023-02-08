@@ -11,6 +11,9 @@
     <dmn:informationRequirement id="_CE3B60A4-92B5-411E-BC96-7631E2E48F9D">
       <dmn:requiredInput href="#_5D6385A5-41AF-4EEC-BB36-902009E37BCE"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_AE583E13-4904-4BF5-9A2A-9F843A270C7D">
+      <dmn:requiredDecision href="#_86633B48-0B8A-40EF-8BBD-B7018118A31B"/>
+    </dmn:informationRequirement>
     <dmn:literalExpression id="_D5CCDEFB-E2A2-45BF-B560-1D318358CF56">
       <dmn:text>if Name = "" then "Sorry, we don't have enough information to provide a response." else "Hello "+Name+"! "+Weather-Advice
 </dmn:text>
@@ -20,9 +23,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_9061CF7A-E6A9-4892-A28C-9D1F54E10050" name="Rain-Forecast" typeRef="number"/>
   </dmn:inputData>
-  <dmn:decision id="_86633B48-0B8A-40EF-8BBD-B7018118A31B" name="WeatherAdvice">
+  <dmn:decision id="_86633B48-0B8A-40EF-8BBD-B7018118A31B" name="Weather-Advice">
     <dmn:extensionElements/>
-    <dmn:variable id="_C950E9DA-5A2C-4577-B699-FA6715A409F4" name="WeatherAdvice" typeRef="string"/>
+    <dmn:variable id="_C950E9DA-5A2C-4577-B699-FA6715A409F4" name="Weather-Advice" typeRef="string"/>
     <dmn:informationRequirement id="_A52E68AA-8F98-48EB-A8EB-73125009ED81">
       <dmn:requiredInput href="#_E7F0A444-3AEA-43E8-B2DE-69231AD05FC7"/>
     </dmn:informationRequirement>
@@ -99,7 +102,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="405" y="126" width="100" height="50"/>
+        <dc:Bounds x="400" y="8" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_E7F0A444-3AEA-43E8-B2DE-69231AD05FC7" dmnElementRef="_E7F0A444-3AEA-43E8-B2DE-69231AD05FC7" isCollapsed="false">
@@ -122,7 +125,11 @@
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_CE3B60A4-92B5-411E-BC96-7631E2E48F9D-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_CE3B60A4-92B5-411E-BC96-7631E2E48F9D">
         <di:waypoint x="455" y="256"/>
-        <di:waypoint x="455" y="176"/>
+        <di:waypoint x="450" y="58"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_AE583E13-4904-4BF5-9A2A-9F843A270C7D-AUTO-TARGET" dmnElementRef="_AE583E13-4904-4BF5-9A2A-9F843A270C7D">
+        <di:waypoint x="225.5" y="178"/>
+        <di:waypoint x="450" y="58"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_A52E68AA-8F98-48EB-A8EB-73125009ED81-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_A52E68AA-8F98-48EB-A8EB-73125009ED81">
         <di:waypoint x="216" y="283"/>
